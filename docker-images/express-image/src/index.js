@@ -13,7 +13,7 @@ app.get('/test', function(req,res){
 });
 
 
-app.get('/', function(req,res){
+app.get('/api/students', function(req,res){
 	res.send(generateStudents());
 });
 
