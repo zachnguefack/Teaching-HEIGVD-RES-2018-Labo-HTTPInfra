@@ -1,16 +1,13 @@
 var Chance = require('chance');
 var chance = new Chance();
-
 //module express 
 const express = require('express')
+
 const app = express()
 
 console.log(chance.name() + " à ", + chance.age() + "ans"); 
 // si notre application recoit une requette et que la ressource visée est le / alors,
 //j'envoie la chaine bonjours res.
-app.get('/test', function(req,res){
-	res.send("juste pour un petit test!");
-});
 
 
 app.get('/api/students', function(req,res){
